@@ -4,13 +4,14 @@
         <title>Ekkasith Page</title>
         <style>
             html * {
-                /*font-family: ;*/
+                font-family: Arial !important;
             }
 
             .profile_header{
                 text-align: center; 
                 /*background-color: rgb(76, 235, 145); */
                 background-image: url('profile_bg.png');
+                background-size: cover;
                 color: rgb(7, 36, 53);
                 padding-top: 3vh;
                 padding-bottom: 3vh;
@@ -25,32 +26,38 @@
             p{
                 margin-top: 0pt;
             }
+
+            body {
+                background-image: linear-gradient(to bottom right, #b483ec, #3a0e7c);
+            }
         </style>
     </head>
     <body>
-        <table boder ="t">
+        <table boder ="1">
             <tbody>
-                <td>
-                    <div class="profile_header">
-                        <img src="pic1.png" 
-                            alt="Ekkasith Profile Picture"
-                            style="width: 100px; height: 100px; border-radius: 50%;"/>
-                        <br/>
-                        <h1>Ekkasith Singmaneechai</h1>
-                        Professional Daydreamer<br/>
-                    </div>
-                </td>
-                <td>
-                    <h2>Hard Worker</h2>
-                        <p>
-                            Work really hard on everything that's not work related!
-                        </p>
+                <tr>
+                    <td>
+                        <div class="profile_header">
+                            <img src="pic1.png" 
+                                alt="Ekkasith Profile Picture"
+                                style="width: 100px; height: 100px; border-radius: 50%;"/>
+                            <br/>
+                            <h1>Ekkasith Singmaneechai</h1>
+                            Professional Daydreamer<br/>
+                        </div>
+                    </td>
+                    <td>
+                        <h2>Hard Worker</h2>
+                            <p>
+                                Work really hard on everything that's not work related!
+                            </p>
 
-                        <h2>Good Liar</h2>
-                        <p>
-                            very liable and reliable
-                        </p>
-                </td>
+                            <h2>Good Liar</h2>
+                            <p>
+                                very liable and reliable
+                            </p>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </body>
