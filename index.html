@@ -3,7 +3,7 @@
     <head>
         <title>Ekkasith Page</title>
         <style>
-            html * {
+            html {
                 font-family: Arial !important;
                 height: 100%;
             }
@@ -15,8 +15,8 @@
                 background-size: cover;
                 opacity: 0.8;
                 color: rgb(7, 36, 53);
-                padding-top: 3vh;
-                padding-bottom: 3vh;
+                padding-top: 4vh;
+                padding-bottom: 4vh;
             }
 
             h2 {
@@ -27,6 +27,7 @@
 
             p{
                 margin-top: 0pt;
+                font-size: small;
             }
 
             body {
@@ -52,8 +53,11 @@
                                 alt="Ekkasith Profile Picture"
                                 style="width: 100px; height: 100px; border-radius: 50%; "/>
                             <br/>
-                            <h1 style="font-size:medium;">Ekkasith Singmaneechai</h1>
-                            Professional Daydreamer<br/>
+                                <h1 style="font-size:medium;">
+                                    <span id = "myName"> Ekkasith Singmaneechai </span>
+                                </h1>
+                            Professional Daydreamer
+                            <br/>
                         </div>
                     </td>
                     <td class="content-cell">
@@ -70,5 +74,16 @@
                 </tr>
             </tbody>
         </table>
+        <button onclick="changeName()">Change Name</button>
+        <script>
+            console.log("Hello");
+
+            function changeName(){
+                //chage the name
+                var span = document.getElementById("myName");
+                span.innerHTML = "something"
+                console.log("Button is clicked")
+            }
+        </script>
     </body>
 </html>
