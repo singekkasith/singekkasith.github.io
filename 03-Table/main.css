@@ -6,3 +6,11 @@
     background-color: brown;
     color: wheat;
 }
+
+.text_center { text-align: center;}
+
+.text_center { text-align: right; }
+
+.center {
+    margin-left: auto;
+}
