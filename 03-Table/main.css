@@ -5,11 +5,16 @@
 .product_table th {
     background-color: brown;
     color: wheat;
+    font-weight: bolder;
 }
 
 .product_table tfoot {
-    background-color: rgb(255, 242, 242);
+    background-color: rgb(254, 227, 227);
     font-weight: bold;
+}
+
+.product_table tbody {
+    background-color: beige;
 }
 
 .text-center { 
