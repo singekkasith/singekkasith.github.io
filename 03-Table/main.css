@@ -7,10 +7,20 @@
     color: wheat;
 }
 
-.text_center { text-align: center;}
+.product_table tfoot {
+    background-color: rgb(255, 242, 242);
+    font-weight: bold;
+}
 
-.text_center { text-align: right; }
+.text-center { 
+    text-align: center;
+}
+
+.text-right { 
+    text-align: right; 
+}
 
 .center {
     margin-left: auto;
+    margin-right: auto;
 }
