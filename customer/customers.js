@@ -62,7 +62,7 @@ function deleteCustomer(index){
 function loadData(){
     let allRows = ""
     for (let c in customers) {
-        let cellName = `<td class='name-header'><img src='delete-icon.png' width='30em' onclick='deleteCustomer("${c}")'/>`  + customers[c].name + "</td>"
+        let cellName = `<td class='name-header'><img src='delete-icon.png' width='25em' onclick='deleteCustomer("${c}")'/>`  + customers[c].name + "</td>"
         let cellEmail = "<td>" + customers[c].email + "</td>"
         let cellPhone = "<td>" + customers[c].phone  + "</td>"
         let row = `<tr>${cellName}${cellEmail}${cellPhone}</tr>`
