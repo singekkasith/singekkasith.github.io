@@ -51,6 +51,7 @@ function deleteProduct(index){
     $('productBody').html("")
     loadData()
 }
+
 function loadData(){
     let allRows = ""
     let gross = 0

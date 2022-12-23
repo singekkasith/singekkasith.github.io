@@ -1,0 +1,43 @@
+[
+	{
+		"name": "Shalashaska Ocelot",
+		"email": "ocelot@gearmetal",
+		"phone": "(747) 540-7374"
+	},
+
+    {
+        "name": "Leon Kennedy",
+        "email": "leon@racoon",
+        "phone": "092-785-4361"
+    },
+
+	{
+		"name": "Albert Wesker",
+		"email": "albert@umbrella",
+		"phone": "(980) 608-7151"
+	},
+
+    {
+        "name": "Clair Redfield",
+        "email": "calir@racoon",
+        "phone": "091-765-4901"
+    },
+
+    {
+        "name": "Jill Valentine",
+        "email": "jill@racoon",
+        "phone": "098-765-4321"
+    },
+	
+	{
+		"name": "Ashley Graham",
+		"email": "ashley@leon.help",
+		"phone": "1-728-606-5103"
+	},
+	{
+		"name": "Samuel Rodrigues",
+		"email": "sam@jetstream.edu",
+		"phone": "(662) 558-2928"
+	}
+
+]
