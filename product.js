@@ -1,3 +1,5 @@
+//Ekkasith S. 6213934
+
 var iProducts = []
 
 $(document).ready(function () {
@@ -67,7 +69,7 @@ function clearProduct(){
     }*/
 
     iProducts.splice(0, iProducts.length)
-    
+
     $('#productBody').html("")
     loadData()
 }
