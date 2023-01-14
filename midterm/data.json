@@ -1,0 +1,31 @@
+[
+
+	{
+		"quantity": 1,
+        "name": "Pocket Watch",
+        "ppu": 1000,
+		"discount": 250
+    },
+
+    {
+		"quantity": 3,
+        "name": "Smoke Granade",
+        "ppu": 2500,
+		"discount": 1000
+    },
+
+    {
+		"quantity": 1,
+        "name": "Grappling Hook",
+        "ppu": 2000,
+		"discount": 500
+    },
+
+    {
+		"quantity": 2,
+        "name": "Portal Gun",
+        "ppu": 3500,
+		"discount": 650
+    }
+
+]

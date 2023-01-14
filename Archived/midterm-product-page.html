@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <title>Midterm</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body onload = "loadData()">
+        <h1 class="text-center">Quotation</h1>
+        <div class="text-center">
+            Product:
+            <select id="products">
+                <option value="Submarine">Submrine</option>
+                <option value="Rocket Launcher">Rocket Launcher</option>
+                <option value="Invisible Car">Invisible Car</option>
+            </select>
+            Quantity:
+            <input type="number" id="qty" style="width: 5rem;"/>
+            Price:
+            <input type="number" id="ppu" style="width: 5rem;"/>
+
+            <button onclick="addToCart()" style="width: 5rem;">+ Add</button>
+            <button onclick="clearProduct()" style="width: 5rem;"> - Clear  </button>
+            
+        </div>
+        <table 
+            id = "productList" 
+            class = "product_table center"
+            style= "width: 80rem">
+            <thead>
+                <th style="width: 10%"></th>
+                <th style="width: 15%">Quantity</th>
+                <th style="width: 25%">Item</th>
+                <th style="width: 15%">Price</th>
+                <th style="width: 20%">Amount</th>
+                <th style="width: 15%">Discount</th>
+            </thead>
+            <tbody id="productBody">
+                
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class ="text-right">Gross</td>
+                    <td class ="text-right">
+                        <span id="gross"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class ="text-right">VAT 7%</td>
+                    <td class ="text-right">
+                        <span id="vat"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class ="text-right">Net</td>
+                    <td class ="text-right">
+                        <span id="net"></span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="product.js"></script>
+    </body>
+</html>

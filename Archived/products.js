@@ -48,7 +48,17 @@ function addToCart(){
 function deleteProduct(index){
     console.log("DELETE", index)
     delete mProducts[index] // delete the element from array
-    $('productBody').html("")
+    $('#productBody').html("")
+    loadData()
+}
+
+//For ClearProduct
+function clearProduct(){
+    console.log("CLEAR ALL ITEMS")
+    for (let i in mProducts){
+        delete mProducts[i]
+    }
+    $('#productBody').html("")
     loadData()
 }
 
@@ -56,13 +66,15 @@ function loadData(){
     let allRows = ""
     let gross = 0
     for (let p in mProducts) {
-        let cellName = `<td class='name-header'><img src='delete-icon.png' class='icon' onclick='deleteProduct("${p}")' />`  + mProducts[p].name + "</td>"
+        //Added
+        let cellDelete =  `<td class='text-center'> <img src='delete-icon.png' class='icon' onclick='deleteProduct("${p}")' />` + "" + "</td>"
+        let cellName = `<td class='name-header'>`  + mProducts[p].name + "</td>"
         let cellQuantity = "<td class='text-center'>" + mProducts[p].quantity + "</td>"
         let cellPPU = "<td class='text-right'>" + mProducts[p].ppu + "</td>"
         let total = mProducts[p].ppu * mProducts[p].quantity 
         gross += total
         let cellTotal = "<td class='text-right'>" + total + "</td>"
-        let row = `<tr>${cellName}${cellQuantity}${cellPPU}${cellTotal}</tr>`
+        let row = `<tr>${cellDelete}${cellQuantity}${cellName}${cellPPU}${cellTotal}</tr>`
         allRows += row
         
         
